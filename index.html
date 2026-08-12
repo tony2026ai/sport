@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a2a5e" />
+    <meta name="description" content="Toronto baseball 2026 season scoreboard and results." />
+    <title>North Star Scoreboard | Toronto 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topline"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="North Star Scoreboard home">
+        <span class="mark" aria-hidden="true">✦</span>
+        <span><b>NORTH STAR</b><small>SCOREBOARD</small></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#latest">Latest</a>
+        <a href="#schedule">Schedule</a>
+      </nav>
+      <span class="season">2026 SEASON</span>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> TORONTO BASEBALL</p>
+          <h1 id="hero-title">THE NORTH<br /><em>IS ON.</em></h1>
+          <p class="lede">Every final score from Toronto’s 2026 regular season. Clean, current, and built for the fans who stay until the last out.</p>
+          <a class="button" href="#schedule">Explore the season <span>↓</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="ball"><i></i><i></i></div>
+          <div class="burst burst-one"></div><div class="burst burst-two"></div>
+          <p>TORONTO<br /><strong>BASEBALL</strong></p>
+          <span class="year">26</span>
+        </div>
+      </section>
+
+      <section class="score-strip" aria-label="Season summary">
+        <div><span>SEASON RECORD</span><strong id="record">—</strong></div>
+        <div><span>GAMES FINAL</span><strong id="games">—</strong></div>
+        <div><span>WIN PCT.</span><strong id="percentage">—</strong></div>
+        <div><span>LAST UPDATED</span><strong id="updated">—</strong></div>
+      </section>
+
+      <section class="latest section" id="latest" aria-labelledby="latest-title">
+        <div class="section-heading"><div><p class="eyebrow"><span></span> JUST IN</p><h2 id="latest-title">LATEST FINAL</h2></div><p id="latest-date" class="date-label">Loading score…</p></div>
+        <article class="game-card" id="latest-card" aria-live="polite">
+          <div class="team away"><span class="team-city" id="opponent">OPPONENT</span><strong id="opponent-score">—</strong></div>
+          <div class="result-center"><span class="final-tag">FINAL</span><span id="innings">— INNINGS</span></div>
+          <div class="team toronto"><span class="team-city">TORONTO</span><strong id="jays-score">—</strong></div>
+          <p id="latest-note">Official 2026 regular-season result</p>
+        </article>
+      </section>
+
+      <section class="form section" aria-labelledby="form-title">
+        <div class="section-heading"><div><p class="eyebrow"><span></span> RECENT FORM</p><h2 id="form-title">LAST 10 GAMES</h2></div><div id="form-record" class="form-record">—</div></div>
+        <div class="form-grid" id="form-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="schedule section" id="schedule" aria-labelledby="schedule-title">
+        <div class="section-heading schedule-heading"><div><p class="eyebrow"><span></span> THE FULL RUN</p><h2 id="schedule-title">SEASON SCHEDULE</h2></div><label class="search"><span class="visually-hidden">Search opponents</span><input id="search" type="search" placeholder="Find an opponent" /><span>⌕</span></label></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Date</th><th>Matchup</th><th>Site</th><th>Final</th><th>Result</th></tr></thead>
+            <tbody id="schedule-body"><tr><td colspan="5" class="loading">Loading completed games…</td></tr></tbody>
+          </table>
+        </div>
+        <p class="data-note">Scores are sourced from MLB’s public schedule data. Only completed regular-season games are shown.</p>
+      </section>
+    </main>
+
+    <footer><a class="brand" href="#top"><span class="mark" aria-hidden="true">✦</span><span><b>NORTH STAR</b><small>SCOREBOARD</small></span></a><p>Toronto baseball, 2026.</p><a href="https://github.com/tony2026ai/sport" target="_blank" rel="noreferrer">View source ↗</a></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
